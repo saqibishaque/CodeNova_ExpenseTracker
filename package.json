@@ -1,0 +1,33 @@
+{
+  "name": "codenova-expense-tracker",
+  "version": "1.0.0",
+  "description": "CodeNova Internship - Task 2: Full-Stack Expense Tracker with Data Persistence & Summaries",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run server\" \"npm run client\"",
+    "start": "npm run dev",
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "seed": "npm run seed --prefix server",
+    "build:client": "npm run build --prefix client"
+  },
+  "keywords": [
+    "codenova",
+    "internship",
+    "task-2",
+    "expense-tracker",
+    "react",
+    "express",
+    "sqlite"
+  ],
+  "author": "CodeNova Intern",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "codenova-expense-server",
+  "version": "1.0.0",
+  "description": "RESTful API backend for CodeNova Task 2 Expense Tracker",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node src/scripts/seed.js"
+  },
+  "keywords": ["express", "sqlite3", "rest-api", "expense-tracker", "codenova"],
+  "author": "CodeNova Intern",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "sqlite3": "^6.0.1"
+  }
+}
